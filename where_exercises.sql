@@ -51,11 +51,11 @@ AND last_name LIKE '%E';
 
 -- Duplicate the previous query and update it to find all employees whose last name starts and ends with 'E' — 899 rows.
 SELECT * FROM employees
-WHERE last_name LIKE 'E%'
-AND last_name LIKE '%E';
+WHERE last_name LIKE 'E%E';
+
 
 
 -- Find all employees with a 'q' in their last name but not 'qu' — 547 rows.
 SELECT * FROM employees
 WHERE last_name LIKE '%q%'
-  AND last_name NOT LIKE '%qu%';
+AND last_name NOT LIKE '%qu%';

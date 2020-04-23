@@ -32,7 +32,7 @@ SELECT * FROM employees
 WHERE last_name LIKE 'E%'
 AND last_name LIKE '%E'
 ORDER BY emp_no;
------------------------------------new function exercise below---------------------------------------
+#-----------------------------------new function exercise below---------------------------------------
 -- Update your queries for employees whose names start and end with 'E'. Use concat() to combine their first and last name together as a single column in your results.
 SELECT CONCAT(first_name, ' ', last_name) FROM employees
 WHERE last_name LIKE 'E%E'
